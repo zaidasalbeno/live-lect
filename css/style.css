@@ -1,0 +1,128 @@
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: brown;
+    background-color: burlywood;
+}
+.top h5{
+
+margin-right: 35px;
+
+}
+.im-all {
+    display: flex;
+    gap: 12px;
+    height: 500px;
+}
+
+.big-card {
+    position: relative;
+    width: 50%;
+}
+
+.middle-card {
+    position: relative;
+    width: 25%;
+}
+
+.right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.small-card {
+    position: relative;
+    height: 50%;
+   
+}
+
+.big-card img,
+.middle-card img,
+.small-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+}
+
+.text p {
+    font-size: 12px;
+    margin:  5px;
+}
+
+.text h2 {
+    font-size: 20px;
+
+}
+
+.small-card h2 {
+    font-size: 16px;
+}
+.circles{
+display: flex;
+gap:100px;
+flex-direction: row;
+flex-wrap: wrap;
+margin-top: 50px;
+justify-content: space-evenly;
+
+}
+.cir1{
+    display: flex;
+flex-direction: row;
+width:200px;
+height: 100px;
+
+}
+.cir1 img{
+
+
+border: 1px solid black;
+border-radius: 50px;
+
+
+}
+.cir1 h3{
+
+margin-left: 20px;
+
+
+}
+.cir1 p{
+
+margin-left: 20px;
+
+
+
+}
+.video{
+display: flex;
+flex-direction: row;
+
+
+}
+.vidt{
+
+    align-items: left;
+
+
+}
+.vidt p{
+gap: 100px;
+justify-content: left;
+
+
+}
