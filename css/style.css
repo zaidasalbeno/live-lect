@@ -9,10 +9,12 @@
     color: brown;
     background-color: burlywood;
 }
-.top h5{
+.top a{
 
 margin-right: 35px;
-
+border: 2px solid black;
+color: brown;
+font-size: 30px;
 }
 .im-all {
     display: flex;
@@ -111,18 +113,162 @@ margin-left: 20px;
 .video{
 display: flex;
 flex-direction: row;
-
+color: black;
+border: 3px solid black;
 
 }
 .vidt{
 
     align-items: left;
+color: beige;
+
+}
+.video iframe
+{
+border: 2px solid black;
+border-radius: 25px;
+width: 1000px;
+
+height: 600px;
+}
+.vidt span{
+padding:500px;
+justify-content: left;
+color:white;
+
+}
+.fore{
+
+
+align-items: center;
 
 
 }
-.vidt p{
-gap: 100px;
-justify-content: left;
+form{
+border: 2px solid black;
+margin: 300px;
+display: flex;
+flex-direction: column;
 
+
+}
+/* transitions */
+
+.top a {
+    transition: 0.3s;
+}
+
+.top a:hover {
+    transform: scale(1.1);
+    background-color: blue;
+    color: aqua;
+}
+
+.big-card,
+.middle-card,
+.small-card,
+.cir1 {
+    transition: 0.3s;
+}
+
+.big-card:hover,
+.middle-card:hover,
+.small-card:hover {
+    transform: scale(1.02);
+    
+}
+
+.cir1:hover {
+   
+    transform: translate(10px);
+}
+
+.video iframe {
+    transition: 0.3s;
+}
+
+.video iframe:hover {
+    transform: scale(1.02);
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .im-all {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .big-card,
+    .middle-card,
+    .right {
+        width: 100%;
+    }
+
+    .big-card,
+    .middle-card {
+        height: 300px;
+    }
+
+    .right {
+        height: 600px;
+    }
+
+    .small-card {
+        height: 50%;
+    }
+
+    .circles {
+        gap: 30px;
+    }
+
+    .video {
+        flex-direction: column;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: 400px;
+    }
+
+    .vidt span {
+        padding: 20px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top a {
+        margin-right: 0;
+        font-size: 20px;
+    }
+
+    .big-card,
+    .middle-card {
+        height: 250px;
+    }
+
+    .right {
+        height: 500px;
+    }
+
+    .cir1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .video iframe {
+        height: 250px;
+    }
 
 }
